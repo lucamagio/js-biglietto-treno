@@ -4,10 +4,12 @@ const prezzoKm = 0.21;
 let prezzo = kilometri * prezzoKm;
 
 if(isNaN(kilometri)){
+
     console.log('inserisci un numero valido');
+    
 } else{
 
-    if(isNaN(eta)){
+    if(isNaN(eta) || eta < 0){
         console.log('inserisci una eta valida');
     } else{
         if(eta >= 0 && eta < 18){
@@ -18,8 +20,6 @@ if(isNaN(kilometri)){
             console.log(`Il prezzo del biglietto è: €${(prezzo*0.6).toFixed(2)}`);
         }
     }
-    
-
 }
 
 
